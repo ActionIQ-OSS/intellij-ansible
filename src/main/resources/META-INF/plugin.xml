@@ -31,6 +31,10 @@
 
     <!-- IDEA extensions -->
     <extensions defaultExtensionNs="com.intellij">
+        <fileTypeFactory implementation="lv.kid.vermut.intellij.yaml.file.VaultFileTypeFactory"/>
+        <lang.parserDefinition language="vaultEx"
+                               implementationClass="lv.kid.vermut.intellij.yaml.parser.VaultParserDefinition"/>
+
         <fileTypeFactory implementation="lv.kid.vermut.intellij.yaml.file.YamlFileTypeFactory"/>
         <colorSettingsPage implementation="lv.kid.vermut.intellij.yaml.editor.NeonColorsPage"/>
         <lang.syntaxHighlighterFactory key="yamlEx"
